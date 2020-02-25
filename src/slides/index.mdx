@@ -30,8 +30,8 @@ const buttonAction = () => {
 </div>
 
 <div style="position: relative; margin:0 auto; max-width: 800px;text-align:center;">   
-    <img src="../rob.png" alt="Roberto Remedios" style="max-height: 800px; margin: 100px 20px; border-radius:50%;float:left; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
-    <img src="../puas.png" alt="Alfredo Navas" style="max-height: 800px; margin: 100px 20px; border-radius:50%;float:right; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
+    <img src="../rob.png" alt="Roberto Remedios" style="max-height: 800px; max-width: 300px; margin: 100px 20px; border-radius:50%;float:left; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
+    <img src="../puas.png" alt="Alfredo Navas" style="max-height: 800px; max-width: 300px; margin: 100px 20px; border-radius:50%;float:right; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
 </div>
 <p style="margin: 0;">
     <a href="https://twitter.com/remediosgraphic">@remediosgraphic</a>&nbsp;~&nbsp;<a href="https://robertoremedios.com">robertoremedios.com</a>
@@ -190,7 +190,7 @@ gatsby develop
 
 Para verlo localmente: http://localhost:8000
 
-Online: https://remediosaraya.github.io/gatsby-a11y-workshop
+Online: https://gatsby-a11y-workshop-1375362427.gtsb.io/
 
 </Slide>
 
@@ -213,7 +213,6 @@ Online: https://remediosaraya.github.io/gatsby-a11y-workshop
 - [NVDA](https://nvaccess.org/download) (Windows)
 - [axe extensions](https://deque.com/axe)
 - [Accessibility Insights](https://accessibilityinsights.io)
-- [more](http://marcysutton.github.io/gatsby-a11y-workshop#Testing-Tools)
 
 </Slide>
 
@@ -754,7 +753,7 @@ Exponer información de accesibilidad para elementos enfocables.
 
 # tabindex + role + name + events
 
-Make custom controls fully interactive
+Haga controles personalizados totalmente interactivos
 
 <div>
     <div class="demo-button" tabindex="0" aria-label="Close" role="button">
@@ -793,15 +792,15 @@ Make custom controls fully interactive
 
 <Slide>
 
-# ARIA: Accessible<br />Rich Internet Applications
+# ARIA: <br /> aplicaciones de Internet enriquecidas accesibles
 
 https://www.w3.org/TR/wai-aria-1.1/
 
-- **role**: what is it?
-- **state**: what's happening to it?
-- **property**: what's the nature of it?
+- ** rol **: ¿qué es?
+- ** estado **: ¿qué le está pasando?
+- ** propiedad **: ¿cuál es su naturaleza?
 
-The first [rule of ARIA](https://www.w3.org/TR/using-aria/) is _don’t use it_
+La primera [regla de ARIA] (https://www.w3.org/TR/using-aria/) es _no la use_
 
 </Slide>
 
@@ -809,7 +808,7 @@ The first [rule of ARIA](https://www.w3.org/TR/using-aria/) is _don’t use it_
 
 <Slide>
 
-# Modal layers: <br />disabling background content
+# Capas modales: <br /> deshabilitar el contenido de fondo
 
 <div>
     <button class="demo-button" onClick={openModal}>Open curtain</button>
@@ -831,12 +830,12 @@ The first [rule of ARIA](https://www.w3.org/TR/using-aria/) is _don’t use it_
 
 <Slide>
 
-# Focus management<br />patterns
+# Patrones de gestión del enfoque <br />
 
-- Dropdowns and menus
-- Layers and modals
-- View changes and deletes
-- Loading screens
+- menús desplegables y menús
+- Capas y modales
+- Ver cambios y eliminaciones
+- Pantallas de carga
 
 </Slide>
 
@@ -844,9 +843,9 @@ The first [rule of ARIA](https://www.w3.org/TR/using-aria/) is _don’t use it_
 
 <Slide>
 
-# Widget interactions:<br />arrow keys or nah?
+# Interacciones de widgets: <br /> teclas de flecha o no?
 
-It depends on the role and pattern <span role="img" title="sparkle">✨</span>
+Depende de la función y el patrón. <span role="img" title="sparkle">✨</span>
 
 http://w3c.github.io/aria-practices/
 
@@ -856,8 +855,8 @@ http://w3c.github.io/aria-practices/
 
 <Slide>
 
-# Navigation vs. Actions
-## a.k.a. Links vs. Buttons
+# Navegación vs. Acciones
+## a.k.a. Enlaces vs. Botones
 
 <div>
 <a href="#">Link</a> <button class="demo-button" onClick={buttonAction}>Button</button>
@@ -888,8 +887,8 @@ https://marcysutton.com/links-vs-buttons-in-modern-web-applications
 
 <Slide>
 
-# Visible focus styles
-Useful for so many people and situations, but often turned off for everyone
+# Estilos de enfoque visibles
+Útil para tantas personas y situaciones, pero a menudo desactivado para todos
 
 <div>
 <button class="demo-button no-focus">Demo button</button>
@@ -922,7 +921,7 @@ Useful for so many people and situations, but often turned off for everyone
 
 <div style="margin-top: -2em">
 
-# Styling input modalities
+# Modalidades de entrada de estilo
 
 </div>
 
@@ -957,7 +956,7 @@ import 'what-input'
 ```
 </CodeBlock>
 
-_An OS-level preference would be ideal_ 👍
+_Una preferencia a nivel de sistema operativo sería ideal_ 👍
 
 </Slide>
 
@@ -1021,7 +1020,7 @@ http://localhost:8000/dropdown
 # Exercise
 ## Create an accessible dropdown
 
-- Component shell: [dropdown.js](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/components/better/dropdown.js)
+- Component shell: [dropdown.js](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/components/better/dropdown.js)
 
 </Slide>
 
@@ -1031,7 +1030,7 @@ http://localhost:8000/dropdown
 
 # Exercise answer
 
-- [examples/dropdown](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/examples/dropdown/)
+- [examples/dropdown](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/examples/dropdown/)
 
 </Slide>
 
@@ -1136,7 +1135,7 @@ http://localhost:8000/announcer
 # Exercise
 ## Build a live region
 
-- [live-region](https://github.com/marcysutton/gatsby-a11y-workshop/tree/master/src/components/better/live-region.js)
+- [live-region](https://github.com/remediosaraya/gatsby-a11y-workshop/tree/master/src/components/better/live-region.js)
 
 </Slide>
 
@@ -1147,7 +1146,7 @@ http://localhost:8000/announcer
 # Exercise answer
 ## Live region
 
-- [examples/live-region](https://github.com/marcysutton/gatsby-a11y-workshop/tree/master/examples/live-region)
+- [examples/live-region](https://github.com/remediosaraya/gatsby-a11y-workshop/tree/master/examples/live-region)
 
 </Slide>
 
@@ -1236,7 +1235,7 @@ http://localhost:8000
 # Exercise answer
 ## Client-side routing
 
-- Gatsby component: [examples/client-side-routing](https://github.com/marcysutton/gatsby-a11y-workshop/tree/master/examples/client-side-routing)    
+- Gatsby component: [examples/client-side-routing](https://github.com/remediosaraya/gatsby-a11y-workshop/tree/master/examples/client-side-routing)    
 
 </Slide>
 
@@ -1342,7 +1341,7 @@ http://localhost:8000/layout
 
 Add markup to a blank page and test it using Accessibility Insights.
 
-- Gatsby page shell: [pages/semantics.jsx](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/pages/semantics.jsx)
+- Gatsby page shell: [pages/semantics.jsx](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/pages/semantics.jsx)
 
 </Slide>
 
@@ -1433,7 +1432,7 @@ http://localhost:8000/animation
 
 Play with reduced-motion and CSS animation or transitions
 
-- [card-flip.js](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/components/better/card-flip.js)
+- [card-flip.js](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/components/better/card-flip.js)
 
 </Slide>
 
@@ -1443,7 +1442,7 @@ Play with reduced-motion and CSS animation or transitions
 
 # Reduced-motion answers
 
-- React: [examples/reduced-motion](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/examples/reduced-motion)
+- React: [examples/reduced-motion](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/examples/reduced-motion)
 - vanilla.js: https://codepen.io/marcysutton/pen/yqVVeY
 
 </Slide>
@@ -1504,7 +1503,7 @@ http://localhost:8000/enhanced-tablist
 
 Play with progressive enhancement
 
-- [tab-list.js](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/components/better/tab-list.js)
+- [tab-list.js](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/components/better/tab-list.js)
 
 </Slide>
 
@@ -1515,7 +1514,7 @@ Play with progressive enhancement
 # Exercise answer
 ## Progressive enhancement
 
-- [Working tab-list.js example](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/examples/progressive-enhancement)
+- [Working tab-list.js example](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/examples/progressive-enhancement)
 
 </Slide>
 
@@ -1598,7 +1597,7 @@ Article: [Writing Automated tests for Accessibility](https://www.deque.com/blog/
 
 # Unit test demo
 
-- Dropdown with Jest: [\__tests\__](https://github.com/marcysutton/gatsby-a11y-workshop/tree/master/src/components/better/__tests__)
+- Dropdown with Jest: [\__tests\__](https://github.com/remediosaraya/gatsby-a11y-workshop/tree/master/src/components/better/__tests__)
 
 </Slide>
 
@@ -1610,7 +1609,7 @@ Article: [Writing Automated tests for Accessibility](https://www.deque.com/blog/
 
 Write an accessibility unit test!
 
-- Jest test shell: [dropdown.test.js](https://github.com/marcysutton/gatsby-a11y-workshop/tree/master/src/components/better/__tests__/dropdown.test.js)
+- Jest test shell: [dropdown.test.js](https://github.com/remediosaraya/gatsby-a11y-workshop/tree/master/src/components/better/__tests__/dropdown.test.js)
 - https://testing-library.com/docs/dom-testing-library/intro
 - https://github.com/testing-library/jest-dom
 
@@ -1623,7 +1622,7 @@ Write an accessibility unit test!
 # Exercise answer
 ## Unit testing
 
-- Jest test: [dropdown.test.js](https://github.com/marcysutton/gatsby-a11y-workshop/tree/master/examples/unit-testing/dropdown.test.js)
+- Jest test: [dropdown.test.js](https://github.com/remediosaraya/gatsby-a11y-workshop/tree/master/examples/unit-testing/dropdown.test.js)
 
 </Slide>
 
@@ -1775,7 +1774,7 @@ Tests can catch roughly 30-50% of accessibility issues,<br />depending on the ru
 
 # Integration test demo
 
-[cypress/integration/index.js](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/cypress/integration/index.js)
+[cypress/integration/index.js](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/cypress/integration/index.js)
 
 </Slide>
 
@@ -1787,7 +1786,7 @@ Tests can catch roughly 30-50% of accessibility issues,<br />depending on the ru
 
 Write an end-to-end accessibility test for<br />keyboard interactions and/or with an accessibility test API
 
-- Cypress test shell: [index.js](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/cypress/integration/index.js)
+- Cypress test shell: [index.js](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/cypress/integration/index.js)
 - Cypress API docs: https://cypress.io
 
 </Slide>
@@ -1798,7 +1797,7 @@ Write an end-to-end accessibility test for<br />keyboard interactions and/or wit
 
 # Integration test answers
 
-- Cypress tests: [examples/integration-testing](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/examples/integration-testing)
+- Cypress tests: [examples/integration-testing](https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/examples/integration-testing)
 
 </Slide>
 
