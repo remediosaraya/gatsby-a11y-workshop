@@ -1,87 +1,86 @@
 
-Outline:
-    - Introduction
-      - Who is Marcy Sutton?
-      - Overview of what we’ll cover
-      - Examples of inaccessible web applications: show the pain
-      - Examples of better web applications
-        - Built HTML pages in Gatsby
-    - Install demos and tools
-      - Get people downloading the Gatsby demo app and NVDA if on Windows
-        - Gatsby Demo app
-          - Make sure everyone can install it and run the tests
-          - Do a quick tour of the source code
-        - Browser extensions / common testing tools
-    - Accessibility debugging: using some of the intro examples
-      - Rendering code in a browser for basic accessibility testing (quick explanation of web context / DOM vs. Node.js tooling)
-        - Prototyping: budo
-        - Gatsby demo app: starting a server with a bigger project
-        - Discuss other rendering/localhost options, like http-server and Vue/Angular-specific things
-      - Using the TAB key to check for keyboard support.
-        - Apple OS setting (a common gotcha)
-        - Visible focus outlines
-        - What shouldn’t be interactive/operable with TAB?
-        - EXERCISE: TAB through some webpages. Can you see where you are on the screen? Can you reach everything?
-        - Known patterns / ARIA Authoring Practices Guide
-          - Promote user testing with people with disabilities early and often
-      - Chrome devtools color contrast debugger
-      - Testing with the axe browser extensions for Chrome and Firefox
-        - EXERCISE: Run an extension on a site
-      - Screen reader testing overview
-        - Recommended combinations: Voiceover and Safari, NVDA and Firefox, JAWS and IE11, iOS Safari + Voiceover, Android Firefox + Talkback, Narrator and Edge
-        - Provide resources to learn more (cheat-sheets, training, etc.)
-        - EXERCISE: use a screen reader (Mac Voiceover, iOS or Android, NVDA or Narrator for Windows)
-    - Introduction to accessibility in JavaScript applications
-      - Myth busting: accessibility + JavaScript can be BFFs.
-      - Focus management requirements + patterns
-        - Discuss focus manager APIs vs. components handling their own focus
-        - Tabindex=”-1” vs. tabindex=”0”
-        - React refs / other framework APIs
-        - Use cases:
-          - View changes
-          - Focus in new layers, replacing on close
-          - Disabling background layers
-          - Handling removal of DOM nodes
-        - Note known issues with iOS and other assistive technologies that can sometimes require workarounds (focus on buttons instead of headings, etc.)
-      - Announcements using ARIA Live Regions
-        - Use cases vary, there’s often more than one way to achieve something (discuss focus management vs. wrapping updating content in a live region, when you might not want to move focus, etc.)
-        - Talk about Live Region requirements: must be rendered on page, but can be visually hidden
-          - Sometimes two regions per “politeness” level are necessary to get everything to announce
-          - A site-level announcement API might be the way to go
-        - Async save / update / etc.
-        - Title changes
-        - Combobox usage / list filtering
-      - Semantic HTML
-        - Using semantics with JSX; verifying output
-        - Putting landmarks into your app
-      - Unintrusive Animation + prefers-reduced-motion
-        - toggle button
-        - OS-level setting
-      - Progressive enhancement: accessible baselines, fallbacks, challenges with JS frameworks
-    - Accessibility units: component-level API concerns
-      - Automated unit testing approach
-        - Test in isolation
-        - Stub inputs/fixture data
-        - Often headless
-        - Fast changing of state
-      - React Component examples with failing tests: combobox.
-        - Accessible names (buttons, links, form controls)
-          - TIPS: don’t use “click here” for links, consider adding visible labels for buttons
-        - Keyboard interactions: escape key, arrow keys
-        - Toggling ARIA states
-        - EXERCISE: Choose a couple failing tests and make them pass
-        - SOLUTION: Fix them together
-      - Bonus info: configurable heading levels, passing in ARIA attributes with component DSLs (don’t make up ARIA attributes; use data attributes instead) etc.
-    - Accessible pages
-      - Integration/end-to-end testing approach
-        - Real-world browser testing
-        - Cypress vs. Selenium Webdriver
-        - Document/page-level accessibility rules: page title, HTML lang, color contrast, heading hierarchy
-        - Component interoperability
-        - Framework testing flexibility
-        - Accessibility testing APIs make more sense here as you can run an entire ruleset against each page
-      - Gatsby example with failing tests
-        - EXERCISE: Color contrast debugging with axe and Chrome devtools
-        - EXERCISE: Fix failing focus management tests (showing component interop)
-        - EXERCISE: get Cypress tests passing on a page
-      - Q&A
+Contenidos:
+    - Introducción
+      - ¿Quién es el Speaker?
+      - Descripción general de lo que cubriremos
+      - Ejemplos de aplicaciones web inaccesibles: muestra el dolor
+      - Ejemplos de mejores aplicaciones web.
+        - Páginas HTML construidas en Gatsby
+    - Instalar demos y herramientas
+      - Haga que la gente descargue la aplicación o demo de Gatsby y NVDA si está en Windows
+        - Gatsby demo
+          - Asegúrese de que todos puedan instalarlo y ejecutar las pruebas
+          - Realize un recorrido rápido por el código fuente
+        - Extensiones de navegador / herramientas de prueba comunes
+    - Probando accesibilidad: utilizando algunos de los ejemplos de introducción
+      - Representación de código en un navegador para pruebas de accesibilidad básicas (explicación rápida del contexto web / DOM vs. herramientas Node.js)
+        - Creación de prototipos: budo
+        - Gatsby demo: iniciar un servidor con un proyecto más grande
+        - Discuta otras opciones de renderizado / localhost, como http-server y cosas específicas de Vue / Angular
+      - Usando la tecla TAB para verificar la compatibilidad con el teclado.
+        - Configuración del sistema operativo Apple (un problema común)
+        - Contornos de enfoque visibles
+        - ¿Qué no debería ser interactivo / operable con TAB?
+        - EJERCICIO: TAB a través de algunas páginas web. ¿Puedes ver dónde estás en la pantalla? ¿Se puede llegar a todo?
+        - Patrones conocidos / Guía de prácticas de autoría de ARIA
+          - Promueva las pruebas de usuarios con personas con discapacidades de manera temprana y frecuente
+      - Chrome devtools depurador de contraste de color
+      - Prueba con las extensiones del navegador ax para Chrome y Firefox
+        - EJERCICIO: ejecutar una extensión en un sitio
+      - Descripción general de las pruebas del lector de pantalla
+        - Combinaciones recomendadas: Voiceover y Safari, NVDA y Firefox, JAWS e IE11, iOS Safari + Voiceover, Android Firefox + Talkback, Narrador y Edge
+        - Proporcionar recursos para aprender más (hojas de trucos, capacitación, etc.)
+        - EJERCICIO: use un lector de pantalla (Mac Voiceover, iOS o Android, NVDA o Narrador para Windows)
+    - Introducción a la accesibilidad en aplicaciones JavaScript.
+      - Mitos: la accesibilidad + JavaScript pueden ser mejores amigos.
+      - Requisitos de gestión de enfoque + patrones
+        - Discuta las API del administrador de enfoque frente a los componentes que manejan su propio enfoque
+        - Tabindex = ”- 1” vs. tabindex = ”0”
+        - Reaccionar referencias / otras API de marco
+        - Casos de uso:
+          - Ver cambios
+          - Enfoque en nuevas capas, reemplazando al cerrar
+          - Deshabilitar capas de fondo
+          - Manejo de eliminación de nodos DOM
+        - Tenga en cuenta los problemas conocidos con iOS y otras tecnologías de asistencia que a veces pueden requerir soluciones alternativas (centrarse en los botones en lugar de encabezados, etc.)
+      - Anuncios utilizando ARIA Live Regions
+        - Los casos de uso varían, a menudo hay más de una forma de lograr algo (discuta la gestión del enfoque frente al ajuste del contenido de actualización en una región en vivo, cuando no desee mover el enfoque, etc.)
+        - Hable sobre los requisitos de la región en vivo: debe mostrarse en la página, pero puede ocultarse visualmente
+          - A veces son necesarias dos regiones por nivel de "cortesía" para que todo se anuncie
+          - Una API de anuncio a nivel de sitio podría ser el camino a seguir
+        - Async guardar / actualizar / etc.
+        - Cambios de título
+        - Uso de cuadro combinado / filtrado de listas
+      - HTML semántico
+        - Uso de la semántica con JSX; Verificación de salida
+        - Poner puntos de referencia en su aplicación
+      - Animación discreta + prefiere movimiento reducido
+        - botón de activación
+        - Configuración de nivel del sistema operativo
+      - Mejora progresiva: líneas de base accesibles, retrocesos, desafíos con marcos JS
+    - Unidades de accesibilidad: preocupaciones de API a nivel de componente
+      - Enfoque automatizado de pruebas unitarias
+        - Prueba aislada
+        - Entradas de datos / datos del accesorio
+        - A menudo sin cabeza
+        - Cambio rápido de estado
+      - Reaccionar ejemplos de componentes con pruebas fallidas: cuadro combinado.
+        - Nombres accesibles (botones, enlaces, controles de formulario)
+          - CONSEJOS: no use "haga clic aquí" para los enlaces, considere agregar etiquetas visibles para los botones
+        - Interacciones de teclado: tecla de escape, teclas de flecha
+        - Alternar estados ARIA
+        - EJERCICIO: elige un par de pruebas reprobadas y haz que pasen
+        - SOLUCIÓN: arreglarlos juntos
+      - Información adicional: niveles de encabezado configurables, pasando atributos ARIA con DSL de componentes (no invente atributos ARIA; use atributos de datos en su lugar) etc.
+    - Páginas accesibles
+      - Enfoque de integración / prueba de extremo a extremo
+        - Pruebas de navegador del mundo real
+        - Cypress vs Selenium Webdriver
+        - Reglas de accesibilidad a nivel de documento / página: título de la página, lenguaje HTML, contraste de color, jerarquía de encabezado
+        - Interoperabilidad de componentes
+        - Flexibilidad de prueba de marco
+        - Las API de pruebas de accesibilidad tienen más sentido aquí, ya que puede ejecutar un conjunto de reglas completo en cada página
+      - Ejemplo de Gatsby con fallas en las pruebas
+        - EJERCICIO: depuración de contraste de color con ax y herramientas de Chrome
+        - EJERCICIO: Solucione las pruebas de gestión de enfoque que fallan (mostrando interoperabilidad de componentes)
+        - EJERCICIO: obtenga las pruebas de Cypress que pasan en una página

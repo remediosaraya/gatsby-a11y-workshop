@@ -1,63 +1,64 @@
-# Building Accessible Sites with Gatsby
+# Creación de sitios accesibles con Gatsby
 
-Learn the necessary techniques and tools for building inclusive web applications with Gatsby and React.js from Gatsby's Head of Learning Marcy Sutton.
+Aprenda las técnicas y herramientas necesarias para crear aplicaciones web inclusivas con Gatsby y React.js del Jefe de Aprendizaje de Gatsby, Marcy Sutton.
 
-Presented at:
-- [Gatsby Days LA](https://www.gatsbyjs.com/gdla-a11y-workshop/)
-- [Smashing Conf NYC](https://smashingconf.com/ny-2019/)
+Presentado en:
+- [Gatsby Meetup San Jose CR 2020-02] 
+- [Gatsby Days LA @marcysutton] (https://www.gatsbyjs.com/gdla-a11y-workshop/)
+- [Smashing Conf NYC @marcysutton] (https://smashingconf.com/ny-2019/)
 
-Some key takeaways:
+Algunas conclusiones clave:
 
-- Understand how to incorporate accessibility into your web development workflow.
-- Debug your sites and applications for accessibility using the latest tools.
-- Apply accessibility to React web applications with Gatsby, while learning how accessibility applies to other stacks.
-- Learn the benefits of manual and automated testing to grow web accessibility superpowers!
-- Integrate focus management into your web applications, gracefully handling keyboard and screen reader interactions.
-- Practice announcing view changes with your code and keeping screen reader users up to date.
-- Achieve wins with semantic markup, unobtrusive animation, and progressive enhancement.
+- Comprender cómo incorporar la accesibilidad en su flujo de trabajo de desarrollo web.
+- Depurar o comprobar accesibilidad de sus sitios y aplicaciones utilizando las últimas herramientas.
+- Aplicar accesibilidad a las aplicaciones web React con Gatsby, mientras aprende cómo se aplica la accesibilidad a otras stacks.
+- ¡Aprenda los beneficios de las pruebas manuales y automatizadas para aumentar las superpotencias de accesibilidad web!
+- Integre la gestión de foco en sus aplicaciones web, manejando las interacciones del teclado y el lector de pantalla.
+- Practique anunciando cambios de vista con su código y manteniendo actualizados a los usuarios de lectores de pantalla.
+- Logre victorias con marcado semántico, animación discreta y mejora progresiva.
 
-App URL: https://marcysutton.github.io/gatsby-a11y-workshop
+URL de la aplicación: https://remediosaraya.github.io/gatsby-a11y-workshop
 
-Workshop slides: https://marcysutton.github.io/gatsby-a11y-workshop/slides/
+Diapositivas del taller: https://remediosaraya.github.io/gatsby-a11y-workshop/slides/
 
 ---
 
-This project was started with [gatsby-starter-mdx-basic](https://github.com/christopherbiscardi/gatsby-starter-mdx-basic) and [@mdx-deck/theme](https://github.com/jxnblk/mdx-deck/tree/master/packages/gatsby-theme).
+Este proyecto se inició con [gatsby-starter-mdx-basic] (https://github.com/christopherbiscardi/gatsby-starter-mdx-basic) y [@mdx-deck/theme] (https://github.com/jxnblk/mdx-deck/tree/master/packages/gatsby-theme).
 
-_Note: This repo requires [Node 12 and npm](https://nodejs.org) to be installed._
+_Nota: Este repositorio requiere que estén instalados [Node.js 12 y npm] (https://nodejs.org) ._
 
-1. Install Gatsby CLI:
+1. Instale Gatsby CLI:
 
 ```sh
 npm install -g gatsby-cli
 ```
 
-1. Create a new Gatsby site and slide deck using this starter
+1. Crea un nuevo sitio Gatsby y set de slides usando este starter
 
 ```sh
-gatsby new gatsby-a11y-workshop https://github.com/marcysutton/gatsby-a11y-workshop
+gatsby new gatsby-a11y-workshop https://github.com/remediosaraya/gatsby-a11y-workshop
 ```
 
-3. Go into the directory and start the development server
+3. Vaya al directorio e inicie el servidor de desarrollo.
 
 ```sh
 cd gatsby-a11y-workshop
 gatsby develop
 ```
 
-    View in a browser: http://localhost:8000
+    Ver en un navegador: http: // localhost: 8000
 
-4. Edit files:
+4. Editar archivos:
 
-    - Site pages: [`src/pages/*`](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/pages)
-    - Site components: [`src/components/*`](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/components)
-    - Templates: [`src/templates/*`](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/templates)
-    - Slide content: [`src/slides/index.mdx`](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/slides/index.mdx)
+    - Páginas del sitio: [`src / pages / *`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/pages)
+    - Componentes del sitio: [`src / components / *`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/components)
+    - Plantillas: [`src / templates / *`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/templates)
+    - Contenido de la diapositiva: [`src / slides / index.mdx`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/slides/index.mdx)
 
-5. To look at the answers from the exercises, check out the [`/examples`](https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/examples) directory in the `master` branch
+5. Para ver las respuestas de los ejercicios, consulte el directorio [`/examples`font>(https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/examples) en la rama` master`
 
-You can also check out the `solutions` branch to see everything in action: https://github.com/marcysutton/gatsby-a11y-workshop/tree/solutions
+También puede consultar la rama `soluciones` para ver todo en acción: https://github.com/remediosaraya/gatsby-a11y-workshop/tree/solutions
 
-### Prerequisites
-1. Have a text editor installed, i.e. VSCode
-2. Have Node.js 12+ and npm installed
+### Prerrequisitos
+1. Tener instalado un editor de texto, es decir, VSCode
+2. Tenga instalado Node.js 12+, Yarn y npm

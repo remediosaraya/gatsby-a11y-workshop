@@ -2,9 +2,9 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: `Building Accessible Sites with Gatsby`,
+    title: `Construyendo Sitios Accesibles con Gatsby`,
     description:
-      `Learn the necessary techniques and tools for building inclusive web applications with Gatsby.`,
+      `Aprenda las técnicas y herramientas necesarias para crear aplicaciones web inclusivas con Gatsby.`,
     author: `@marcysutton`,
   },
   pathPrefix: "/gatsby-a11y-workshop",
