@@ -46,18 +46,18 @@ cd gatsby-a11y-workshop
 gatsby develop
 ```
 
-    Ver en un navegador: http: // localhost: 8000
+    Ver en un navegador: http://localhost: 8000
 
 4. Editar archivos:
 
-    - Páginas del sitio: [`src / pages / *`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/pages)
-    - Componentes del sitio: [`src / components / *`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/components)
-    - Plantillas: [`src / templates / *`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/templates)
-    - Contenido de la diapositiva: [`src / slides / index.mdx`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/slides/index.mdx)
+    - Páginas del sitio: [`src/pages/*`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/pages)
+    - Componentes del sitio: [`src/components/*`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/components)
+    - Plantillas: [`src/templates/*`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/templates)
+    - Contenido de la diapositiva: [`src/slides/index.mdx`] (https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/src/slides/index.mdx)
 
 5. Para ver las respuestas de los ejercicios, consulte el directorio [`/examples`font>(https://github.com/remediosaraya/gatsby-a11y-workshop/blob/master/examples) en la rama` master`
 
-También puede consultar la rama `soluciones` para ver todo en acción: https://github.com/remediosaraya/gatsby-a11y-workshop/tree/solutions
+También puede consultar el folder `soluciones` para ver todo en acción: https://github.com/remediosaraya/gatsby-a11y-workshop/tree/solutions
 
 ### Prerrequisitos
 1. Tener instalado un editor de texto, es decir, VSCode

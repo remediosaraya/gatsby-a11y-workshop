@@ -17,7 +17,7 @@ const buttonAction = () => {
 
 <Slide>
 
-# Building Accessible<br />Sites with Gatsby
+# Construyendo Sitios<br />Accesibles con Gatsby
 
 </Slide>
 
@@ -26,18 +26,14 @@ const buttonAction = () => {
 <Slide>
 
 <div style="margin-top: -3em">
-    <h1>Who is Marcy Sutton?</h1>
+    <h1>Quien es Roberto Remedios?</h1>
 </div>
 
-<div style="position: relative; margin:0 auto; max-width: 300px;">
-    <img src="../gatsby-icon.png" alt="Gatsby" style="position:absolute; left: -200px; max-height: 130px; top:30px;" />
-    <img src="../marcysutton-sketch.png" alt="Sketch note portrait of Marcy by Maggie Appleton" style="max-height: 400px; margin-bottom: 200px;" />
-    <img src="../a11y-octopus.png" alt="A11y Octopus" style="position:absolute; right: -240px; top: 30px; max-height: 180px;" />
-    <img src="../axe-logo.png" alt="axe"  style="position:absolute; top: 280px; left: -20px; max-height: 130px;" />
-    <img src="../angular-logo.png" alt="Angular" style="position:absolute; top: 280px; left: 70%; max-height: 125px;" />
+<div style="position: relative; margin:0 auto; max-width: 300px;">   
+    <img src="../rob.png" alt="Roberto Remedios" style="max-height: 800px; margin: 100px 0; border-radius:50%; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
 </div>
 <p style="margin: 0;">
-    <a href="https://twitter.com/marcysutton">@marcysutton</a>&nbsp;~&nbsp;<a href="https://marcysutton.com">marcysutton.com</a>
+    <a href="https://twitter.com/remediosgraphic">@remediosgraphic</a>&nbsp;~&nbsp;<a href="https://robertoremedios.com">robertoremedios.com</a>
 </p>
 
 </Slide>
@@ -46,10 +42,10 @@ const buttonAction = () => {
 
 <Slide>
 
-# Accessibility
+# Accesibilidad
 
-Making the web more inclusive <br />
-**_with_** _and_ **_for_ people with disabilities**
+Hacer que la web sea más inclusiva <br />
+**_con_** _y_ **_para_ personas con discapacidad**
 
 http://bit.ly/microsoft-inclusive-toolkit
 
@@ -61,10 +57,10 @@ http://bit.ly/microsoft-inclusive-toolkit
 
 # Gatsby Sites
 
-- Server-side rendered HTML pages
-- “Hydration” into React.js apps
-- Automatic client-side routing
-- Perfect for modern test tooling
+- Server-side render de páginas HTML
+- "Hidratación" en las aplicaciones React.js
+- Enrutamiento automático del lado del cliente
+- Perfecto para herramientas de prueba modernas
 
 https://www.gatsbyjs.org/docs/glossary
 
@@ -74,7 +70,7 @@ https://www.gatsbyjs.org/docs/glossary
 
 <Slide>
 
-<img style="height: 90vh; margin-top: -1em;" src="../how-gatsby-works.png" alt="How Gatsby Works" />
+<img style="height: 90vh; margin-top: -1em;" src="../how-gatsby-works.png" alt="Cómo funciona Gatsby" />
 
 </Slide>
 
@@ -82,20 +78,20 @@ https://www.gatsbyjs.org/docs/glossary
 
 <Slide>
 
-# What we’ll cover
+# Lo que cubriremos
 
 <div style="font-size: 2.2rem;">
 
-- Basic concepts of Gatsby
-- Accessibility debugging
-- Accessibility in Gatsby sites
-    - Focus management
-    - Announcements
-    - Client-side routing
-    - Semantic HTML
-    - Unobtrusive motion
-    - Progressive enhancement
-- Automated testing & linting
+- Conceptos básicos de Gatsby
+- Debugging de accesibilidad
+- Accesibilidad en los sitios de Gatsby
+     - Focus management
+     - Anuncios
+     - Enrutamiento del lado del cliente
+     - HTML semántico
+     - Movimientos discretos
+     - Mejora progresiva
+- Pruebas automatizadas y linting
 
 </div>
 
@@ -105,7 +101,7 @@ https://www.gatsbyjs.org/docs/glossary
 
 <Slide>
 
-# Gatsby<br />Building Blocks
+# Construyendo Bloques<br />con Gatsby
 
 - [Gatsby API Files](https://www.gatsbyjs.org/docs/api-files/)
 - [GraphQL Data Layer](https://www.gatsbyjs.org/docs/graphql-concepts/)
@@ -120,7 +116,7 @@ https://www.gatsbyjs.org/docs/glossary
 
 <div>
     <a href="https://gatsbyjs.org/docs/cheat-sheet/" target="_blank">
-        <img src="../cheat-sheet_page_1.png" alt="Gatsby Cheat Sheet page 1" style="max-height: 100vh" />
+        <img src="../cheat-sheet_page_1.png" alt="Gatsby Cheat Sheet página 1" style="max-height: 100vh" />
     </a>
 </div>
 
@@ -128,7 +124,7 @@ https://www.gatsbyjs.org/docs/glossary
 
 <div>
     <a href="https://gatsbyjs.org/docs/cheat-sheet/" target="_blank">
-        <img src="../cheat-sheet_page_2.png" alt="Gatsby Cheat Sheet page 2" style="max-height: 100vh" />
+        <img src="../cheat-sheet_page_2.png" alt="Gatsby Cheat Sheet página 2" style="max-height: 100vh" />
     </a>
 </div>
 
@@ -138,14 +134,15 @@ https://www.gatsbyjs.org/docs/glossary
 
 <div style="margin-top: -4em">
 
-# An app for today
+# El app que desarrollaremos hoy
 
 </div>
 
-- Built with Gatsby and React
+- Construido con Gatsby y React
 - Server and client-rendered
-- Outputs HTML pages by default
-- Includes these MDX-Deck slides
+- Produce páginas HTML por defecto
+- Incluye estas diapositivas MDX-Deck
+
 
 <div style="display: inline-block;
     max-width: 45%;
@@ -168,20 +165,20 @@ https://www.gatsbyjs.org/docs/glossary
 
 <div style="margin-top: -2em">
 
-# Install time
+# Instalación
 
-Node.js 12+ recommended
+Node.js 12+ (recomendado)
 
 </div>
 
-https://github.com/marcysutton/gatsby-a11y-workshop
+https://github.com/remediosaraya/gatsby-a11y-workshop
 
 <CodeBlock>
 
 ```shell
 sudo npm install -g gatsby-cli
 
-gatsby new gatsby-workshop https://github.com/marcysutton/gatsby-a11y-workshop.git
+gatsby new gatsby-workshop https://github.com/remediosaraya/gatsby-a11y-workshop.git
 cd gatsby-workshop
 
 gatsby develop
@@ -189,15 +186,15 @@ gatsby develop
 
 </CodeBlock>
 
-View the site locally: http://localhost:8000
+Para verlo localmente: http://localhost:8000
 
-Online: https://marcysutton.github.io/gatsby-a11y-workshop
+Online: https://remediosaraya.github.io/gatsby-a11y-workshop
 
 </Slide>
 
 ---
 
-<img src="../vscode-tour.png" alt="Project in VS Code" style="max-height: 100vh" />
+<img src="../vscode-tour.png" alt="Proyecto en VS Code" style="max-height: 100vh" />
 
 ---
 
@@ -207,7 +204,7 @@ Online: https://marcysutton.github.io/gatsby-a11y-workshop
 
 <Slide>
 
-# Get some<br />accessibility tools
+# Hablemos de <br />herramientas de accesibilidad
 
 ⚒
 
@@ -222,7 +219,7 @@ Online: https://marcysutton.github.io/gatsby-a11y-workshop
 
 <Slide>
 
-# Which.js?
+# Cual.js?
 
 - Gatsby + React
 - Ember
@@ -238,8 +235,8 @@ Online: https://marcysutton.github.io/gatsby-a11y-workshop
 
 <Slide>
 
-# It doesn’t matter.
-## People just want to use your site
+# No importa.
+## Las personas solo quieren usar su sitio
 
 ![Elmo](../elmo-shrug.gif)
 
@@ -249,14 +246,14 @@ Online: https://marcysutton.github.io/gatsby-a11y-workshop
 
 <Slide>
 
-# #A11y debugging
+# Pruebas de #A11y
 
-- Render in a web browser
-- Test controls with the keyboard
-- Use accessibility web extensions
-- Check color contrast
-- Test with screen readers
-- Use magnification & zoom
+- Renderizar en un navegador web
+- Controles de prueba con el teclado
+- Use extensiones web de accesibilidad
+- Verificar contraste de color
+- Prueba con lectores de pantalla
+- Usar zoom %200
 
 </Slide>
 
@@ -264,7 +261,7 @@ Online: https://marcysutton.github.io/gatsby-a11y-workshop
 
 <Slide width="full">
 
-# Apps to test in the wild
+# Aplicaciones para probar
 
 <div style="float: right; font-size: 6rem; margin: 2rem 2rem 0 0;">
     <span aria-label="magnifying glass" role="img">🔍</span>
@@ -280,8 +277,8 @@ Online: https://marcysutton.github.io/gatsby-a11y-workshop
 
 <Slide>
 
-# Debugging in this Gatsby app
-Fire up a build in a browser and start testing
+# Probando esta aplicación Gatsby
+Inicie una compilación en un navegador y comience a probar
 
 <CodeBlock side="left">
 
@@ -367,11 +364,11 @@ $ gatsby build && gatsby serve
 
 <Slide>
 
-# The accessibility tree
+# Accessibility tree
 
-## A parallel structure to the DOM
+## Una estructura paralela al DOM
 
-Uses platform Accessibility APIs to communicate page<br /> structure & content to assistive technologies
+Utiliza el API de accesibilidad de la plataforma para comunicar la estructura y el contenido de la página <br /> a las tecnologías de asistencia
 
 ![Chrome accessibility tree dump](../chrome-accessibility-tree.png)
 
@@ -381,7 +378,7 @@ Uses platform Accessibility APIs to communicate page<br /> structure & content t
 
 <Slide>
 
-# What are platform<br />Accessibility APIs?
+# Que es la plataforma de<br /> APIs de accesibilidad?
 
 https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/
 
@@ -391,9 +388,9 @@ https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-ap
 
 <Slide>
 
-# Visualize with browser DevTools
+# Visualizar con el navegador DevTools
 
-Semantic markup and CSS styles impact the accessibility tree
+El marcado semántico y los estilos CSS afectan el accessibility tree (árbol de accesibilidad)
 
 ![Chrome DevTools accessibility inspector](../chrome-a11y-inspector.png)
 
@@ -405,7 +402,7 @@ Semantic markup and CSS styles impact the accessibility tree
 
 # Focus testing haxx
 
-## Paste into browser devTools console
+## Pegar en la consola del navegador (devTools)
 
 <CodeBlock>
 
@@ -423,7 +420,7 @@ document.body.addEventListener('focusin', (event) => {
 
 <Slide>
 
-# Safari, y u no focus?
+# Safari, esta o no enfocando?
 
 <p><img src="../safari-settings.png" alt="Safari Preferences" style="max-width: 70%;" /></p>
 
@@ -433,8 +430,8 @@ document.body.addEventListener('focusin', (event) => {
 
 <Slide>
 
-# Exercise 1
-## Test pages with the keyboard
+# Ejercicio 1
+## Probar páginas con el teclado
 
 ![a wooden doll thing repeatedly hitting a keyboard](../keyboard.gif)
 
@@ -444,9 +441,10 @@ document.body.addEventListener('focusin', (event) => {
 
 <Slide>
 
-# Exercise 2
-## Run a browser extension
+# Ejercicio 2
+## Corra las extensiones del browser
 
+- [ANDY] (https://www.ssa.gov/accessibility/andi/help/install.html)
 - [axe](https://deque.com/axe)
 - [Accessibility Insights](https://accessibilityinsights.io)
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
@@ -459,10 +457,10 @@ document.body.addEventListener('focusin', (event) => {
 
 <Slide>
 
-# Exercise 3
-## Test with accessibility devTools
+# Ejercicio 3
+## Prueba con accesibilidad devTools
 
-- [Chrome color picker & accessibility pane](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference#pane)
+- [Selector de color de Chrome y panel de accesibilidad](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference#pane)
 - [Firefox accessibility tools](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector#Accessing_the_Accessibility_Inspector)
 
 </Slide>
@@ -471,9 +469,9 @@ document.body.addEventListener('focusin', (event) => {
 
 <Slide>
 
-# Testing with Screen Readers
+# Prueba con lectores de pantalla
 
-Cheat sheets for getting started
+Hojas de trucos para comenzar
 - https://webaim.org/articles/voiceover/
 - https://webaim.org/articles/nvda/
 - https://webaim.org/articles/jaws/
@@ -484,28 +482,15 @@ Cheat sheets for getting started
 
 <Slide>
 
-# Exercise 4
-## Screen reader testing
+# Ejercicio 4
+## Prueba de lector de pantalla
 
-- OSX Voiceover and Safari
-- NVDA and Firefox Windows
-- JAWS and IE11 or Edge
-- iOS Voiceover and Safari
-- Android Accessibility and Chrome
-- Orca on Linux
-
-</Slide>
-
----
-
-<Slide>
-
-# Magnification
-## For users with low vision
-
-- Browser zoom (all the way: 500%!)
-- OS-level zoom
-- ZoomText & other assistive tech
+- OSX Voiceover y Safari
+- NVDA y Firefox Windows
+- JAWS e IE11 o Edge
+- iOS Voiceover y Safari
+- Accesibilidad de Android y Chrome
+- Orca en Linux
 
 </Slide>
 
@@ -513,14 +498,27 @@ Cheat sheets for getting started
 
 <Slide>
 
-# Exercise 5
-## Test with magnification
+# Aumento Zoom
+## Para usuarias con baja visión.
 
-Things to watch out for:
+- Zoom del navegador (hasta el final: ¡500%!)
+- Zoom a nivel del sistema operativo
+- ZoomText y otra tecnología de asistencia
 
-- Page scrolling
-- Font sizes & scaling
-- UX of interactions when zoomed
+</Slide>
+
+---
+
+<Slide>
+
+# Ejercicio 5
+## Prueba con aumento
+
+Cosas a tener en cuenta:
+
+- Desplazamiento de página
+- Tamaños de fuente y escala
+- UX de interacciones al hacer zoom
 
 </Slide>
 
@@ -530,14 +528,14 @@ Things to watch out for:
 
 <Slide>
 
-# Components<br />in Gatsby
+# Componentes<br />en Gatsby
 
 - [page components](https://www.gatsbyjs.org/docs/building-with-components/#page-components)
 - [non-page components](https://www.gatsbyjs.org/docs/building-with-components/#non-page-components)
 - [layout components](https://www.gatsbyjs.org/docs/layout-components/)
 
 <br />
-<a href="https://www.gatsbyjs.org/docs/building-with-components/">Building with components</a>
+<a href="https://www.gatsbyjs.org/docs/building-with-components/">componentes construidos</a>
 
 </Slide>
 
@@ -545,7 +543,7 @@ Things to watch out for:
 
 <Slide>
 
-# Functional components in action
+# Componentes funcionales en acción.
 
 <CodeBlock side="left" title="src/components/my-component.jsx">
 
@@ -636,15 +634,15 @@ export default TacoComponent
 
 <Slide>
 
-# Accessibility in JavaScript Applications (& Gatsby sites)
+# Accesibilidad en aplicaciones JavaScript (y sitios Gatsby)
 
 <div style="width: 55%; margin: 1em auto">
 
-- Live Region announcements
-- Focus management
-- Semantic HTML
-- Unobtrusive motion
-- Progressive enhancement
+- Anuncios en vivo de la región
+- Gestión del enfoque
+- HTML semántico
+- Movimiento discreto
+- Mejora progresiva
 
 </div>
 
@@ -654,11 +652,11 @@ export default TacoComponent
 
 <Slide>
 
-# Focus management
+# Manejo de enfoque
 
-_Moving the user’s focus as part of an interaction <br /> to alert them to new content_
+_Mover el foco del usuario como parte de una interacción <br/> para alertarlo sobre nuevo contenido_
 
-_Also: handling focus in disabled and mutated parts of the page_
+_También: manejo del foco en partes deshabilitadas y mutadas de la página_
 
 </Slide>
 
