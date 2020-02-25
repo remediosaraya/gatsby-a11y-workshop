@@ -60,7 +60,7 @@
     "babel-preset-gatsby": "^0.2.7",
     "cypress": "^3.4.1",
     "cypress-axe": "^0.5.1",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "jest-transform-css": "^2.0.0",
@@ -70,6 +70,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcysutton/gatsby-a11y-workshop"
+    "url": "https://github.com/remediosaraya/gatsby-a11y-workshop"
   }
 }
