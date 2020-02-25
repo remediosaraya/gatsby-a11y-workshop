@@ -29,9 +29,9 @@ const buttonAction = () => {
     <h1>Quienes somos?</h1>
 </div>
 
-<div style="position: relative; margin:0 auto; max-width: 300px;">   
-    <img src="../rob.png" alt="Roberto Remedios" style="max-height: 800px; margin: 100px 0; border-radius:50%; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
-    <img src="../puas.png" alt="Alfredo Navas" style="max-height: 800px; margin: 100px 0; border-radius:50%; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
+<div style="position: relative; margin:0 auto; max-width: 800px;text-align:center;">   
+    <img src="../rob.png" alt="Roberto Remedios" style="max-height: 800px; margin: 100px 20px; border-radius:50%;float:left; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
+    <img src="../puas.png" alt="Alfredo Navas" style="max-height: 800px; margin: 100px 20px; border-radius:50%;float:right; box-shadow: 10px 5px 5px grey; border:solid 10px #000;" />
 </div>
 <p style="margin: 0;">
     <a href="https://twitter.com/remediosgraphic">@remediosgraphic</a>&nbsp;~&nbsp;<a href="https://robertoremedios.com">robertoremedios.com</a>
@@ -666,12 +666,12 @@ _También: manejo del foco en partes deshabilitadas y mutadas de la página_
 
 <Slide>
 
-# Focus management<br />building blocks
+Gestión del enfoque <br /> bloques de construcción
 
-- Reachable and operable elements
-- TAB, escape, and arrow keys
-- Visible focus styles
-- Hidden/inert content
+- Elementos accesibles y operables
+- TAB, escape y teclas de flecha
+- Estilos de enfoque visibles
+- Contenido oculto / inerte
 
 </Slide>
 
@@ -679,9 +679,9 @@ _También: manejo del foco en partes deshabilitadas y mutadas de la página_
 
 <Slide>
 
-# tabindex in HTML
+# tabindex en HTML
 
-Make non-interactive elements focusable
+Hacer elementos no interactivos enfocables
 
 <div class="demo-button">
     Demo DIV
@@ -698,7 +698,7 @@ tabIndex="99641"    // all up in your tab order. hard to manage
 </CodeBlock>
 
 <div style="margin-top:3rem;">
-<span role="img" title="light bulb">💡</span> <em>Screen readers go beyond the TAB key</em>
+<span role="img" title="light bulb">💡</span> <em>Los lectores de pantalla van más allá de la tecla TAB</em>
 </div>
 
 </Slide>
@@ -709,7 +709,7 @@ tabIndex="99641"    // all up in your tab order. hard to manage
 
 # tabindex + role + name
 
-Expose accessibility information for focusable elements.
+Exponer información de accesibilidad para elementos enfocables.
 
 <div>
     <div class="demo-button" tabindex="0">
@@ -722,7 +722,7 @@ Expose accessibility information for focusable elements.
 ```html
 <div tabIndex="0"
      role="button"
-     aria-label="Close">   
+     aria-label="Cerrar">   
 </div>
 ```
 
@@ -742,7 +742,7 @@ Expose accessibility information for focusable elements.
 
 <div style="margin-top:3rem;">
 
-<span role="img" title="light bulb">💡</span> <em>Intended for custom interactive elements, not wrapper DIVs</em>
+<span role="img" title="light bulb">💡</span> <em>Destinado a elementos interactivos personalizados, no DIVs contenedores</em>
 
 </div>
 
