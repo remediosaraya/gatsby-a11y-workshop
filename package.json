@@ -2,7 +2,7 @@
   "name": "gatsby-a11y-workshop",
   "description": "Building Accessible Sites with Gatsby",
   "version": "1.0.1",
-  "author": "Marcy Sutton <marcy@gatsbyjs.com>",
+  "author": "Roberto Remedios <remediosaraya@gmail.com>",
   "dependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
     "@emotion/core": "^10.0.14",

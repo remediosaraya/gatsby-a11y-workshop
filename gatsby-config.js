@@ -5,7 +5,7 @@ module.exports = {
     title: `Construyendo Sitios Accesibles con Gatsby`,
     description:
       `Aprenda las técnicas y herramientas necesarias para crear aplicaciones web inclusivas con Gatsby.`,
-    author: `@marcysutton`,
+    author: `@remediosgraphic`,
   },
   pathPrefix: "/gatsby-a11y-workshop",
   plugins: [
