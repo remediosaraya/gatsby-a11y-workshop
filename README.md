@@ -3,7 +3,7 @@
 Aprenda las técnicas y herramientas necesarias para crear aplicaciones web inclusivas con Gatsby y React.js del Jefe de Aprendizaje de Gatsby, Marcy Sutton.
 
 Presentado en:
-- [Gatsby Meetup San Jose CR 2020-02] 
+- [Gatsby Meetup San Jose CR 2020-02 Roberto Remedios / Alfredo Navas] (https://www.eventbrite.com/o/roberto-remedios-29042350269)
 - [Gatsby Days LA @marcysutton] (https://www.gatsbyjs.com/gdla-a11y-workshop/)
 - [Smashing Conf NYC @marcysutton] (https://smashingconf.com/ny-2019/)
 
